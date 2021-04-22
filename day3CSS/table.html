@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Tables </title>
+        <style>
+            table {
+                border: 2px solid black;
+                border-collapse: separate;
+                border-spacing: 2px 4px; /* //specifies horizontal and vertical spacing 
+                (only works when border-collapse  is set to separate) */
+                /* empty-cells: show; */
+                empty-cells: hide;
+
+                caption-side: top;
+                /* caption-side: bottom; */
+            }
+
+            td, th {
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <p>CSS Table </p>
+        <div >
+            
+            
+            <table>
+                <caption>This is a caption</caption>
+                <tr>
+                    <th>Amount</th>
+                    <th>Date</th>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>01/02/2021</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>01/01/2020</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>dvdkjvdv</td>
+                </tr>
+            </table>    
+        </div>
+    </body>
+</html>

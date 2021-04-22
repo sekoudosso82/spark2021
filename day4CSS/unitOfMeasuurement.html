@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Unit of Measurement</title>
+
+        <style>
+            .half{
+                background: red;
+                color: white;
+                width: 50%;
+                height: 50%;
+                margin: 20px auto;
+            }
+
+            body, html {
+                height: 100%;
+                margin: 0;
+            }
+
+            h4 {
+                margin: 0;
+            }
+
+            .tall{
+                /* height is set based on parent or body/html height */
+                height: 100%;
+                background: black;
+                color: white;
+                width: 800px;
+                margin: 0 auto;
+                font-size: 20pt;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="tall">
+            <h4>Hello</h4>
+            <p class="half">
+                This is a paragraph
+            </p>
+        </div>
+
+    </body>
+</html>

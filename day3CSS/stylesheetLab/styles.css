@@ -1,0 +1,22 @@
+div {
+    background-color: gray;
+}
+
+p {
+    color: black;
+    font-size:14pt;
+}
+li {
+    font-size: 16pt;
+}
+
+ol li  {
+    color: orange;
+    font-family: courier, monospace;
+
+} 
+
+ul li  {
+    color: blue;
+    font-family: Arial, sans-serif;
+}

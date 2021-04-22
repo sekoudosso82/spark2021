@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Selectors (Element)</title>
+        <style>
+            /* element  */
+            p {
+                background: red;
+                color: white;
+            }
+            /* class  */
+            .blue {
+                color: blue;
+            }
+             /* ID  */
+             #green {
+                 color: green;
+             }
+             /* select all element  */
+             * {
+                 font-family: sans-serif;
+                 padding: 15px 0;
+             }
+             /* select multiple elements for same css  */
+             h1, p {
+                 padding: 1em 0;
+                 color: blue;
+             }
+
+             /* immediate children  */
+             div > p {
+                 font-family: sans-serif;
+                 font-size: 16pt;
+             }
+             /* Ancestor / Descendant selector  */
+             div p {
+                font-family: sans-serif;
+                font-size: 16pt;
+             }
+             /* siblings  / consecutive elements*/
+
+             h2+p {
+                font-family: sans-serif;
+                font-size: 16pt;
+             }
+
+             /* Predecessor / successor selector  */
+             div~p {
+                font-family: sans-serif;
+                font-size: 16pt;
+             }
+            /* combine  element */
+                p.red.tall{
+                    font-size: 18pt;
+                    color: white;
+                }
+                .red {}
+                .tall {}
+
+
+        </style>
+    </head>
+
+    <body>
+        <p> THis is the first paragraph</p>         <!-- element -->
+        <h2 class="blue"> heading 2</h2>         <!-- class -->
+        <p id="green"> THis is the first paragraph</p>  <!-- ID -->
+        <h1> heading 1</h1>
+
+        <div class="1">
+            <p> this is a paragraph inside one div </p>
+            <article>
+                <p> this a paragraph inside two div </p>
+            </article>
+        </div>
+
+        <!-- combine element  -->
+        <p class="red tall"> THis is the first paragraph</p>        
+        <p class="tall"> THis is the first paragraph</p> 
+        <p class="red"> this is a paragraph inside one div </p>
+    </body>
+</html>
